@@ -1,0 +1,4 @@
+/trec_eval/
+*.class
+/bin/
+.class

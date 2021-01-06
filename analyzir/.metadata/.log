@@ -1,0 +1,41 @@
+!SESSION 2016-11-17 13:22:25.218 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 1 1 2016-11-17 13:23:06.249
+!MESSAGE Workbench migration started
+
+!ENTRY org.eclipse.ui 1 1 2016-11-17 13:23:12.003
+!MESSAGE Workbench migration finished
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-11-17 13:25:00.090
+!MESSAGE Invalid project description.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:169)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:53)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:263)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:247)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createExistingProject(ProjectUtils.java:179)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.access$0(ProjectUtils.java:142)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils$1.run(ProjectUtils.java:97)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2262)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:134)
+	at org.eclipse.egit.ui.internal.clone.ProjectUtils.createProjects(ProjectUtils.java:60)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.importProjects(GitImportWizard.java:253)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard.access$2(GitImportWizard.java:235)
+	at org.eclipse.egit.ui.internal.clone.GitImportWizard$4.run(GitImportWizard.java:205)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: OK
+Contains: /home/nilson/Desktop/AnalyzIR/analyzir overlaps the workspace location: /home/nilson/Desktop/AnalyzIR/analyzir
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2016-11-17 13:25:00.091
+!MESSAGE Invalid project description.
+!SUBENTRY 2 unknown 0 0 2016-11-17 13:25:00.091
+!MESSAGE OK
+!SUBENTRY 2 org.eclipse.core.resources 4 77 2016-11-17 13:25:00.091
+!MESSAGE /home/nilson/Desktop/AnalyzIR/analyzir overlaps the workspace location: /home/nilson/Desktop/AnalyzIR/analyzir
